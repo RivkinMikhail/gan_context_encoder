@@ -14,3 +14,6 @@
   2) Тест на наборе изображений. Для этого в папку \dataset\val помещается папка с тестовыми изображениями и в терминале запускается команда 
   python test.py --netG model/netG_places.pth --dataroot dataset/val --batchSize 100
   Результаты обоих вариантов тестирования сохраняются в корне проекта в файлах под названиями 'val_real_samples','val_cropped_samples' и 'val_recon_samples'
+
+Примечание: 
+Файл 'netG_places.pth' находится по ссылке https://drive.google.com/file/d/1avDN3UUeyeQnj39YfqVnGSwYDH6D4a8m/view?usp=sharing и должен быть помещен в папку 'model' 
