@@ -16,4 +16,5 @@
   Результаты обоих вариантов тестирования сохраняются в корне проекта в файлах под названиями 'val_real_samples','val_cropped_samples' и 'val_recon_samples'
 
 Примечание: 
-Файл 'netG_places.pth' находится по ссылке https://drive.google.com/file/d/1avDN3UUeyeQnj39YfqVnGSwYDH6D4a8m/view?usp=sharing и должен быть помещен в папку 'model' 
+1. Файл 'netG_places.pth' находится по ссылке https://drive.google.com/file/d/1avDN3UUeyeQnj39YfqVnGSwYDH6D4a8m/view?usp=sharing и должен быть помещен в папку 'model' 
+2. Логи для Tensorboard находятся по ссылке https://drive.google.com/file/d/12slIiz_5tE9vsbDQ56eWm8llCr06Gupo/view?usp=sharing (заменить папку 'runs') 
