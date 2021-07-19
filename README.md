@@ -3,8 +3,11 @@
 Код модели взят из репозитория https://github.com/BoyuanJiang/context_encoder_pytorch
 
 Для решения использованы:
+
 Python 3.9.4
+
 Pytorch 1.9.0+cu111
+
 Tensorboard 2.5.0
 
 
