@@ -79,20 +79,20 @@ if __name__ ==  '__main__':
         dataset = dset.LSUN(db_path=opt.dataroot, classes=['bedroom_train'],
                         transform=transforms.Compose([
                             transforms.Scale(opt.imageSize),
-                            transforms.CenterCrop(opt.imageSize),
+                            transforms.CenterCrop(opt.cropSize),
                             transforms.ToTensor(),
                             transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
                         ]))
     elif opt.dataset == 'cifar10':
         dataset = dset.CIFAR10(root=opt.dataroot, download=True,
                            transform=transforms.Compose([
-                               transforms.Scale(opt.imageSize),
+                               transforms.Scale(opt.cropSize),
                                transforms.ToTensor(),
                                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
                            ]))
     elif opt.dataset == 'streetview':
         transform = transforms.Compose([transforms.Scale(opt.imageSize),
-                                    transforms.CenterCrop(opt.imageSize),
+                                    transforms.CenterCrop(opt.cropSize),
                                     transforms.ToTensor(),
                                     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
         dataset = dset.ImageFolder(root=opt.dataroot, transform=transform )
