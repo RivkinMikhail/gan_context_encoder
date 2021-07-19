@@ -143,7 +143,7 @@ if __name__ ==  '__main__':
     real_label = 1
     fake_label = 0
 
-    real_center = torch.FloatTensor(opt.batchSize, 3, int(opt.imageSize/2), int(opt.imageSize/2))
+    real_center = torch.FloatTensor(opt.batchSize, 3, int(opt.cropSize), int(opt.cropSize))
 
     if opt.cuda:
         netD.cuda()
