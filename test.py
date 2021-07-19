@@ -61,7 +61,7 @@ if __name__ ==  '__main__':
 
     input_real = torch.FloatTensor(opt.batchSize, 3, opt.imageSize, opt.imageSize)
     input_cropped = torch.FloatTensor(opt.batchSize, 3, opt.imageSize, opt.imageSize)
-    real_center = torch.FloatTensor(int(opt.batchSize), 3, int(opt.imageSize/2), int(opt.imageSize/2))
+    real_center = torch.FloatTensor(int(opt.batchSize), 3, int(opt.cropSize), int(opt.cropSize))
 
     criterionMSE = nn.MSELoss()
 
