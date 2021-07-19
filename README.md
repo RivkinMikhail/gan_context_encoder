@@ -2,6 +2,13 @@
 Решение тестового задания BroutonLab
 Код модели взят из репозитория https://github.com/BoyuanJiang/context_encoder_pytorch
 
+Для решения использованы:
+Python 3.9.4
+Pytorch 1.9.0+cu111
+Tensorboard 2.5.0
+
+
+
 1. Для запуска тренировки на данном датасете (places365) необходимо в папке 'dataset' создать директорию 'train' и загрузить в нее папку с данными (в моем случае, это папка 'places'). Тренировка запускается из папки проекта с помощью команды 
 
  `python train_modified.py --cuda --wtl2 0.999 --niter 20  --batchSize 64 `
